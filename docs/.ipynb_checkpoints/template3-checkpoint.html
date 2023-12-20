@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differential Equation Solver with Plot</title>
+    
+    <!-- Include Plotly library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label, input {
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Differential Equation Solver with Plot</h1>
+
+    <label for="equation">Differential Equation (e.g., y' = x*y):</label>
+    <input type="text" id="equation" placeholder="Enter your differential equation">
+
+    <label for="initialCondition">Initial Condition (e.g., y(0) = 1):</label>
+    <input type="text" id="initialCondition" placeholder="Enter the initial condition">
+
+    <label for="stepSize">Step Size:</label>
+    <input type="number" id="stepSize" placeholder="Enter the step size">
+
+    <label for="numSteps">Number of Steps:</label>
+    <input type="number" id="numSteps" placeholder="Enter the number of steps">
+
+    <button onclick="solveAndPlot()">Solve and Plot</button>
+
+    <!-- Plotly plot container -->
+    <div id="plot"></div>
+
+    <script>
+        function solveAndPlot() {
+            // Get input values
+            const equation = document.getElementById('equation').value;
+            const initialCondition = parseFloat(document.getElementById('initialCondition').value);
+            const stepSize = parseFloat(document.getElementById('stepSize').value);
+            const numSteps = parseInt(document.getElementById('numSteps').value);
+
+            // Parse the equation and initial condition
+            const ode = new Function('y', 'x', `return ${equation};`);
+
+            // Solve the differential equation using the Runge-Kutta method
+            const xValues = [];
+            const yValues = [];
+
+            let x = 0;
+            let y = initialCondition;
+
+            for (let i = 0; i <= numSteps; i++) {
+                xValues.push(x);
+                yValues.push(y);
+
+                const k1 = stepSize * ode(y, x);
+                const k2 = stepSize * ode(y + k1 / 2, x + stepSize / 2);
+                const k3 = stepSize * ode(y + k2 / 2, x + stepSize / 2);
+                const k4 = stepSize * ode(y + k3, x + stepSize);
+
+                y = y + (k1 + 2 * k2 + 2 * k3 + k4) / 6;
+                x += stepSize;
+            }
+
+            // Plot the result using Plotly
+            const plotContainer = document.getElementById('plot');
+
+            const trace = {
+                x: xValues,
+                y: yValues,
+                type: 'scatter',
+                mode: 'lines',
+                name: 'Solution'
+            };
+
+            const layout = {
+                title: 'Differential Equation Solution',
+                xaxis: { title: 'x' },
+                yaxis: { title: 'y' }
+            };
+
+            Plotly.newPlot(plotContainer, [trace], layout);
+        }
+    </script>
+
+</body>
+</html>
