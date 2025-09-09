@@ -41,6 +41,18 @@
       padding: 20px 0;
       text-align: center;
     }
+      .bio-section { padding: 2.25rem 1rem; background: #ffffff; color: #111827; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+      .bio-section .container { max-width: 900px; margin: 0 auto; }
+      .section-title { font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 700; }
+      .lead { font-size: 1.0625rem; line-height: 1.6; margin-bottom: 0.75rem; }
+      .bio-section p { margin-bottom: 0.75rem; line-height: 1.6; color: #374151; }
+      .skill-tags { margin-top: 1rem; }
+      .skill-tags ul { list-style: disc; margin: 0.5rem 0 0 1.25rem; padding: 0; color: #374151; }
+      .skill-tags strong { display: inline-block; margin-right: 0.5rem; color: #111827; }
+      @media (prefers-color-scheme: dark) {
+        .bio-section { background: #0b1220; color: #e6eef8; }
+        .bio-section p, .skill-tags ul { color: #cfd8e3; }
+      }
     .copyright-badge {
         position: fixed;
         left: 16px;
@@ -89,9 +101,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#publications">Publications</a>
-                    </li>
                 </ul>
             </div>
         </div>          
@@ -122,6 +131,9 @@
             <div class="widget-item">
                 <a class="btn btn-primary rounded" href="https://scholar.google.com/citations?user=F_UKcAEAAAAJ&hl=en" target="_blank" rel="noreferrer noopener">Google Scholar</a>
             </div>
+            <div class="widget-item">
+                <a class="btn btn-primary rounded" href="publications.html" target="_blank" rel="noreferrer noopener">Publications</a>
+            </div>
         </div>
     </header>
     <!-- End of Page Header -->
@@ -145,60 +157,38 @@
     </section>
 
     <!-- Skills section -->
-    <section id="skills" class="section">
-        <div class="container text-center">
-            <h6 class="section-title mb-4">Skills</h6>
+    <section id="skills" class="bio-section" aria-labelledby="skills-heading">
+  <div class="container">
+    <h2 id="skills-heading" class="section-title">Skills</h2>
 
-            <div class="row text-left">
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Anesthesiology</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>100%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Mathematical and Computational Biology</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>100%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Nonlinear Dynamics and Chaos </h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>100%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Numerical Analysis</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>100%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Differential Equations</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>100%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Probability, Statistics, and Stochastic Processes</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>100%</span></div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </section>
+    <p>
+      My professional skill set integrates advanced clinical expertise with a strong foundation in applied mathematics and computational science. As an anesthesiologist, I bring comprehensive knowledge of physiology and pharmacology to the perioperative setting, applying these principles to deliver safe, effective, and individualized anesthetic care. I am proficient in advanced airway management, regional anesthesia, vascular access, and intraoperative monitoring, with particular strength in crisis management and decision-making under pressure.
+    </p>
+
+    <p>
+      In parallel with clinical practice, I maintain expertise in applied mathematics and computational modeling. My academic work encompasses dynamical systems, numerical methods, and computer programming, applied to physiologic modeling, simulation tools, and data-driven analyses. This interdisciplinary perspective enables rigorous analysis of complex physiologic systems, translation of theoretical models into practical clinical tools, and optimization of decision-making through computational methods.
+    </p>
+
+    <p>
+      I am committed to rigorous research and to education, with experience in publication and mentorship. My focus is on translating quantitative and computational insights into advances in anesthesiology—whether through modeling of respiratory and cardiovascular systems, pharmacokinetic/pharmacodynamic simulations, improved monitoring strategies, or development of simulation-based educational resources. By combining clinical acumen, mathematical rigor, and programming proficiency, I aim to advance the science and practice of perioperative medicine and to mentor the next generation of clinician–scientists.
+    </p>
+
+    <div class="skill-tags" aria-hidden="false">
+      <strong>Core competencies:</strong>
+      <ul>
+        <li>Perioperative medicine & anesthetic management</li>
+        <li>Physiology & pharmacology</li>
+        <li>Advanced airway, regional anesthesia, invasive monitoring</li>
+        <li>Crisis management & clinical decision-making</li>
+        <li>Dynamical systems & numerical modeling</li>
+        <li>Physiologic simulation (respiratory, cardiovascular, PK/PD)</li>
+        <li>Programming & data analysis (Python, MATLAB, simulation frameworks)</li>
+        <li>Research methodology, publication, and mentorship</li>
+      </ul>
+    </div>
+  </div>
+</section>
     <!-- End of Skills section -->
-
-    <!-- Start of Publications section -->
-    <section id="publications" class="section">
-        <div class="container text-center">
-            <h6 class="section-title mb-4">Publications</h6>
-            <a class="btn btn-primary rounded mt-3" href="publications.html">Link to Publications</a>
-        </div>
-    </section>
-    <!-- End of Publications section -->
 
     <div class="copyright-badge">Copyright © <script>document.write(new Date().getFullYear())</script> Julian W. Landaw, MD, PhD.</div>
 
