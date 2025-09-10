@@ -101,6 +101,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#webpages">Webpages</a>
+                    </li>
                 </ul>
             </div>
         </div>          
@@ -129,9 +132,6 @@
                 <a class="btn btn-dark rounded" href="https://orcid.org/0009-0008-6837-7695" target="_blank" rel="noreferrer noopener">ORCID profile</a>
             </div>
             <div class="widget-item">
-                <a class="btn btn-primary rounded" href="https://scholar.google.com/citations?user=F_UKcAEAAAAJ&hl=en" target="_blank" rel="noreferrer noopener">Google Scholar</a>
-            </div>
-            <div class="widget-item">
                 <a class="btn btn-primary rounded" href="publications.html" target="_blank" rel="noreferrer noopener">Publications</a>
             </div>
         </div>
@@ -139,20 +139,17 @@
     <!-- End of Page Header -->
     
     <!-- About section -->
-    <section id="about" class="section mt-3">
-        <div class="container mt-5">
-            <div class="row text-center text-md-left">
+    <section id="about" class="bio-section" aria-labelledby="about-heading">
+        <div class="container">
+            <h2 id="about-heading" class="section-title">About</h2>
                 <div class="col-md-3">
                     <img src="assets/imgs/photo.jpg" alt="" class="img-thumbnail mb-4">
                 </div>
-                <div class="pl-md-4 col-md-9">
-                    <h6 class="title text-center">Julian W. Landaw, M.D., Ph.D.</h6>
-                    <p class="subtitle text-center">Anesthesiologist<br>Brigham and Women's Hospital</p>
-                    <p>I am an attending anesthesiologist at Brigham and Women’s Hospital in Boston, Massachusetts, where I am passionate about combining clinical excellence with scientific innovation. My journey began at UC Berkeley, where I earned a BA in Mathematics and Statistics and developed a deep appreciation for the power of quantitative thinking in solving complex problems. That curiosity led me to the David Geffen School of Medicine at UCLA, where I completed a dual MD/PhD program.</p>
-                    <p>Under the mentorship of Dr. Zhilin Qu in the Department of Biomathematics, my PhD focused on using computational modeling and mathematical analysis to explore the mechanisms of cardiac arrhythmias, particularly in conditions such as Long QT Syndrome and Brugada Syndrome. This experience strengthened my belief that the integration of physiology, clinical medicine, and data-driven insights can transform patient care.</p>
-                    <p>After completing residency training at Brigham and Women’s Hospital, I now strive to bring this vision into practice. My goal is to leverage my background in physiology and quantitative science to enhance the precision and safety of anesthetic care, ensuring that every patient benefits from an approach that is both evidence-based and deeply personalized.</p>
-                </div>
-            </div>
+            <h6 class="title text-center">Julian W. Landaw, M.D., Ph.D.</h6>
+            <p class="subtitle text-center">Anesthesiologist<br>Brigham and Women's Hospital</p>
+            <p>I am an attending anesthesiologist at Brigham and Women’s Hospital in Boston, Massachusetts, where I am passionate about combining clinical excellence with scientific innovation. My journey began at UC Berkeley, where I earned a BA in Mathematics and Statistics and developed a deep appreciation for the power of quantitative thinking in solving complex problems. That curiosity led me to the David Geffen School of Medicine at UCLA, where I completed a dual MD/PhD program.</p>
+            <p>Under the mentorship of Dr. Zhilin Qu in the Department of Biomathematics, my PhD focused on using computational modeling and mathematical analysis to explore the mechanisms of cardiac arrhythmias, particularly in conditions such as Long QT Syndrome and Brugada Syndrome. This experience strengthened my belief that the integration of physiology, clinical medicine, and data-driven insights can transform patient care.</p>
+            <p>After completing residency training at Brigham and Women’s Hospital, I now strive to bring this vision into practice. My goal is to leverage my background in physiology and quantitative science to enhance the precision and safety of anesthetic care, ensuring that every patient benefits from an approach that is both evidence-based and deeply personalized.</p>
         </div>
     </section>
 
@@ -161,16 +158,13 @@
   <div class="container">
     <h2 id="skills-heading" class="section-title">Skills</h2>
 
-    <p>
-      My professional skill set integrates advanced clinical expertise with a strong foundation in applied mathematics and computational science. As an anesthesiologist, I bring comprehensive knowledge of physiology and pharmacology to the perioperative setting, applying these principles to deliver safe, effective, and individualized anesthetic care. I am proficient in advanced airway management, regional anesthesia, vascular access, and intraoperative monitoring, with particular strength in crisis management and decision-making under pressure.
+    <p>My professional skill set integrates advanced clinical expertise with a strong foundation in applied mathematics and computational science. As an anesthesiologist, I bring comprehensive knowledge of physiology and pharmacology to the perioperative setting, applying these principles to deliver safe, effective, and individualized anesthetic care. I am proficient in advanced airway management, regional anesthesia, vascular access, and intraoperative monitoring, with particular strength in crisis management and decision-making under pressure.
     </p>
 
-    <p>
-      In parallel with clinical practice, I maintain expertise in applied mathematics and computational modeling. My academic work encompasses dynamical systems, numerical methods, and computer programming, applied to physiologic modeling, simulation tools, and data-driven analyses. This interdisciplinary perspective enables rigorous analysis of complex physiologic systems, translation of theoretical models into practical clinical tools, and optimization of decision-making through computational methods.
+    <p>In parallel with clinical practice, I maintain expertise in applied mathematics and computational modeling. My academic work encompasses dynamical systems, numerical methods, and computer programming, applied to physiologic modeling, simulation tools, and data-driven analyses. This interdisciplinary perspective enables rigorous analysis of complex physiologic systems, translation of theoretical models into practical clinical tools, and optimization of decision-making through computational methods.
     </p>
 
-    <p>
-      I am committed to rigorous research and to education, with experience in publication and mentorship. My focus is on translating quantitative and computational insights into advances in anesthesiology—whether through modeling of respiratory and cardiovascular systems, pharmacokinetic/pharmacodynamic simulations, improved monitoring strategies, or development of simulation-based educational resources. By combining clinical acumen, mathematical rigor, and programming proficiency, I aim to advance the science and practice of perioperative medicine and to mentor the next generation of clinician–scientists.
+    <p>I am committed to rigorous research and to education, with experience in publication and mentorship. My focus is on translating quantitative and computational insights into advances in anesthesiology—whether through modeling of respiratory and cardiovascular systems, pharmacokinetic/pharmacodynamic simulations, improved monitoring strategies, or development of simulation-based educational resources. By combining clinical acumen, mathematical rigor, and programming proficiency, I aim to advance the science and practice of perioperative medicine and to mentor the next generation of clinician–scientists.
     </p>
 
     <div class="skill-tags" aria-hidden="false">
@@ -181,13 +175,19 @@
         <li>Advanced airway, regional anesthesia, invasive monitoring</li>
         <li>Crisis management & clinical decision-making</li>
         <li>Dynamical systems & numerical modeling</li>
-        <li>Physiologic simulation (respiratory, cardiovascular, PK/PD)</li>
-        <li>Programming & data analysis (Python, MATLAB, simulation frameworks)</li>
+        <li>Physiologic simulation (electrophysiology, respiratory, cardiovascular, PK/PD models)</li>
+        <li>Programming & data analysis (Python, MATLAB, C, C++, R, simulation frameworks)</li>
         <li>Research methodology, publication, and mentorship</li>
       </ul>
     </div>
   </div>
 </section>
+    <section id="webpages" class="bio-section" aria-labelledby="webpages-heading">
+        <div class="container">
+            <h2 id="webpages-heading" class="section-title">Webpages</h2>
+            <a class="btn btn-primary rounded" href="https://julianlandaw.github.io/physio/threecompartmentmodel.html" target="_blank" rel="noreferrer noopener">PK/PD Modeling</a>
+        </div>
+    </section>
     <!-- End of Skills section -->
 
     <div class="copyright-badge">Copyright © <script>document.write(new Date().getFullYear())</script> Julian W. Landaw, MD, PhD.</div>
