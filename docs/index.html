@@ -1,206 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Steller landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Julian Landaw's Home Page | Welcome!</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Steller main styles -->
-	<link rel="stylesheet" href="assets/css/steller.css">
-    <style>
-    body {
-      background-image: url('assets/imgs/background.jpeg');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      font-family: "Segoe UI", Arial, sans-serif;
-    }
-    .navbar {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(6px);
-    }
-    section {
-      padding: 80px 0;
-    }
-    h1 {
-      font-weight: 700;
-    }
-    .card {
-      border: none;
-      border-radius: 1rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.9);
-    }
-    footer {
-      background: #222;
-      color: #bbb;
-      padding: 20px 0;
-      text-align: center;
-    }
-      .bio-section { padding: 2.25rem 1rem; background: #ffffff; color: #111827; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
-      .bio-section .container { max-width: 900px; margin: 0 auto; }
-      .section-title { font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 700; }
-      .lead { font-size: 1.0625rem; line-height: 1.6; margin-bottom: 0.75rem; }
-      .bio-section p { margin-bottom: 0.75rem; line-height: 1.6; color: #374151; }
-      .skill-tags { margin-top: 1rem; }
-      .skill-tags ul { list-style: disc; margin: 0.5rem 0 0 1.25rem; padding: 0; color: #374151; }
-      .skill-tags strong { display: inline-block; margin-right: 0.5rem; color: #111827; }
-      @media (prefers-color-scheme: dark) {
-        .bio-section { background: #0b1220; color: #e6eef8; }
-        .bio-section p, .skill-tags ul { color: #cfd8e3; }
-      }
-    .copyright-badge {
-        position: fixed;
-        left: 16px;
-        bottom: 12px;
-        z-index: 9999;
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-        font-size: 12.5px;
-        line-height: 1.2;
-        color: #fff;
-        background: rgba(0,0,0,0.55);
-        backdrop-filter: saturate(120%) blur(2px);
-        -webkit-backdrop-filter: saturate(120%) blur(2px);
-        padding: 6px 10px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-        pointer-events: none; /* so it doesn't block clicks */
-      }
-  @media (prefers-color-scheme: light) {
-    .copyright-badge { background: rgba(0,0,0,0.45); color: #fff; }
-  }
-  @media (prefers-color-scheme: dark) {
-    .copyright-badge { background: rgba(0,0,0,0.55); color: #f2f2f2; }
-  }
-  @media (max-width: 480px) {
-    .copyright-badge { font-size: 11.5px; right: 10px; bottom: 10px; padding: 5px 8px; }
-  }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Julian Landaw is an anesthesiologist at Brigham and Women’s Hospital with a background in mathematics, computational modeling, and cardiac electrophysiology.">
+<meta name="author" content="Julian W. Landaw">
+<meta name="theme-color" content="#192f36">
+<title>Julian Landaw, MD, PhD | Anesthesiology & Computational Science</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer>
+</script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <!-- Page navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/chaos.jpeg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#webpages">Webpages</a>
-                    </li>
-                </ul>
-            </div>
-        </div>          
-    </nav>
-    <!-- End of page navigation -->
-
-    <!-- Page Header -->
-    <header class="header" id="home" style="margin:0 auto;">
-        <div class="container text-center">
-            <div class="infos">
-                <h6 class="title">Julian Landaw</h6>
-                <p>Anesthesiologist</p>
-                <p>Brigham and Women's Hospital</p>
-                <div class="gif">
-                    <img src="assets/imgs/spiralwavebreakup.gif">
-                    </img>
-                </div>
-            </div>
-        </div> 
-        <!-- Header-widget -->
-        <div class="widget">
-            <div class="widget-item">
-                <a class="btn btn-primary rounded" href="assets/pdfs/JLandaw_CV.pdf" target="_blank" rel="noreferrer noopener">DOWNLOAD CV</a>
-            </div>
-            <div class="widget-item">
-                <a class="btn btn-dark rounded" href="https://orcid.org/0009-0008-6837-7695" target="_blank" rel="noreferrer noopener">ORCID profile</a>
-            </div>
-            <div class="widget-item">
-                <a class="btn btn-primary rounded" href="publications.html" target="_blank" rel="noreferrer noopener">Publications</a>
-            </div>
-        </div>
-    </header>
-    <!-- End of Page Header -->
-    
-    <!-- About section -->
-    <section id="about" class="bio-section" aria-labelledby="about-heading">
-        <div class="container">
-            <h2 id="about-heading" class="section-title">About</h2>
-                <div class="col-md-3">
-                    <img src="assets/imgs/photo.jpg" alt="" class="img-thumbnail mb-4">
-                </div>
-            <h6 class="title text-center">Julian W. Landaw, M.D., Ph.D.</h6>
-            <p class="subtitle text-center">Anesthesiologist<br>Brigham and Women's Hospital</p>
-            <p>I am an attending anesthesiologist at Brigham and Women’s Hospital in Boston, Massachusetts, where I am passionate about combining clinical excellence with scientific innovation. My journey began at UC Berkeley, where I earned a BA in Mathematics and Statistics and developed a deep appreciation for the power of quantitative thinking in solving complex problems. That curiosity led me to the David Geffen School of Medicine at UCLA, where I completed a dual MD/PhD program.</p>
-            <p>Under the mentorship of Dr. Zhilin Qu in the Department of Biomathematics, my PhD focused on using computational modeling and mathematical analysis to explore the mechanisms of cardiac arrhythmias, particularly in conditions such as Long QT Syndrome and Brugada Syndrome. This experience strengthened my belief that the integration of physiology, clinical medicine, and data-driven insights can transform patient care.</p>
-            <p>After completing residency training at Brigham and Women’s Hospital, I now strive to bring this vision into practice. My goal is to leverage my background in physiology and quantitative science to enhance the precision and safety of anesthetic care, ensuring that every patient benefits from an approach that is both evidence-based and deeply personalized.</p>
-        </div>
-    </section>
-
-    <!-- Skills section -->
-    <section id="skills" class="bio-section" aria-labelledby="skills-heading">
-  <div class="container">
-    <h2 id="skills-heading" class="section-title">Skills</h2>
-
-    <p>My professional skill set integrates advanced clinical expertise with a strong foundation in applied mathematics and computational science. As an anesthesiologist, I bring comprehensive knowledge of physiology and pharmacology to the perioperative setting, applying these principles to deliver safe, effective, and individualized anesthetic care. I am proficient in advanced airway management, regional anesthesia, vascular access, and intraoperative monitoring, with particular strength in crisis management and decision-making under pressure.
-    </p>
-
-    <p>In parallel with clinical practice, I maintain expertise in applied mathematics and computational modeling. My academic work encompasses dynamical systems, numerical methods, and computer programming, applied to physiologic modeling, simulation tools, and data-driven analyses. This interdisciplinary perspective enables rigorous analysis of complex physiologic systems, translation of theoretical models into practical clinical tools, and optimization of decision-making through computational methods.
-    </p>
-
-    <p>I am committed to rigorous research and to education, with experience in publication and mentorship. My focus is on translating quantitative and computational insights into advances in anesthesiology—whether through modeling of respiratory and cardiovascular systems, pharmacokinetic/pharmacodynamic simulations, improved monitoring strategies, or development of simulation-based educational resources. By combining clinical acumen, mathematical rigor, and programming proficiency, I aim to advance the science and practice of perioperative medicine and to mentor the next generation of clinician–scientists.
-    </p>
-
-    <div class="skill-tags" aria-hidden="false">
-      <strong>Core competencies:</strong>
-      <ul>
-        <li>Perioperative medicine & anesthetic management</li>
-        <li>Physiology & pharmacology</li>
-        <li>Advanced airway, regional anesthesia, invasive monitoring</li>
-        <li>Crisis management & clinical decision-making</li>
-        <li>Dynamical systems & numerical modeling</li>
-        <li>Physiologic simulation (electrophysiology, respiratory, cardiovascular, PK/PD models)</li>
-        <li>Programming & data analysis (Python, MATLAB, C, C++, R, simulation frameworks)</li>
-        <li>Research methodology, publication, and mentorship</li>
-      </ul>
-    </div>
-  </div>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<nav class="wrap nav" aria-label="Main navigation">
+<a class="brand" href="index.html">Julian Landaw
+</a>
+<div class="nav-links">
+<a href="index.html" aria-current="page">Home</a>
+<a href="index.html#about">About</a>
+<a href="publications.html" >Publications</a>
+<a href="index.html#webpages">Tools</a>
+</div>
+</nav>
+</header>
+<main id="main" class="wrap">
+<section class="hero" id="home" aria-labelledby="hero-title">
+<div>
+<p class="eyebrow">Anesthesiology &amp; computational science</p>
+<h1 id="hero-title">Julian Landaw
+</h1>
+<p class="intro">I’m an anesthesiologist at Brigham and Women’s Hospital in Boston, with a background in mathematical modeling and cardiac electrophysiology.</p>
+<div class="actions">
+<a class="button primary" href="publications.html">Publications &rarr;</a>
+<a class="button" href="assets/pdfs/JLandaw_CV.pdf">View CV (PDF)</a>
+</div>
+</div>
+<figure class="portrait">
+<img src="assets/imgs/photo.jpg" alt="Portrait of Julian Landaw" width="590" height="463" fetchpriority="high">
+<figcaption>Julian W. Landaw, MD, PhD &nbsp; / &nbsp; Boston, MA</figcaption>
+</figure>
 </section>
-    <section id="webpages" class="bio-section" aria-labelledby="webpages-heading">
-        <div class="container">
-            <h2 id="webpages-heading" class="section-title">Webpages</h2>
-            <a class="btn btn-primary rounded" href="https://julianlandaw.github.io/physio/threecompartmentmodel.html" target="_blank" rel="noreferrer noopener">PK/PD Modeling</a>
-        </div>
-    </section>
-    <!-- End of Skills section -->
-
-    <div class="copyright-badge">Copyright © <script>document.write(new Date().getFullYear())</script> Julian W. Landaw, MD, PhD.</div>
-
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- steller js -->
-    <script src="assets/js/steller.js"></script>
-
+<section class="section split" id="about" aria-labelledby="about-heading">
+<div>
+<h2 id="about-heading">About</h2>
+</div>
+<div class="prose">
+<p>I studied mathematics and statistics at UC Berkeley and earned my MD/PhD at UCLA. I completed anesthesiology residency at Brigham and Women’s Hospital, where I now practice as an attending anesthesiologist.</p>
+<p>My doctoral work with Zhilin Qu in UCLA’s Department of Biomathematics examined how the heart’s electrical activity depends on its recent history—and how this memory can contribute to arrhythmias.</p>
+</div>
+</section>
+<section class="section" id="skills" aria-labelledby="research-heading">
+<div class="research-grid">
+<div>
+<h2 id="research-heading">Research</h2>
+<p>I use physiological simulations and mathematical models to study how ion channels and cardiac memory contribute to electrical instability, from action potentials in individual cells to spiral waves in tissue.</p>
+<div class="actions">
+<a href="publications.html">Browse publications &rarr;</a>
+</div>
+</div>
+<figure class="research-visual">
+<video controls muted loop playsinline preload="metadata" aria-label="Simulation of cardiac spiral-wave breakup">
+<source src="assets/imgs/spiralwavebreakup.mp4" type="video/mp4">
+<a href="assets/imgs/spiralwavebreakup.mp4">View the spiral-wave simulation (MP4)</a>
+</video>
+<figcaption>Spiral-wave breakup in a cardiac simulation.<br>
+<a href="publications.html#pub1">Read the related research &rarr;</a>
+</figcaption>
+</figure>
+</div>
+</section>
+<section class="section" id="webpages" aria-labelledby="tools-heading">
+<div class="feature">
+<div>
+<h2 id="tools-heading">Interactive model</h2>
+<p>Explore drug distribution and effects over time with a pharmacokinetic/pharmacodynamic model.</p>
+</div>
+<a class="button" href="https://julianlandaw.github.io/physio/Pharmacology/threecompartmentmodel.html">Three-compartment drug model &rarr;</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<span>&copy; <span data-current-year>2026</span> Julian W. Landaw, MD, PhD</span>
+<div class="footer-links">
+<a href="assets/pdfs/JLandaw_CV.pdf">CV (PDF)</a>
+<a href="https://orcid.org/0009-0008-6837-7695">ORCID</a>
+<a href="https://github.com/julianlandaw">GitHub</a>
+</div>
+</div>
+</footer>
 </body>
 </html>
